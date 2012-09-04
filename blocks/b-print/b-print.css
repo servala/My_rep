@@ -1,0 +1,18 @@
+.b-print{
+    padding: 15px 0 0 0;
+}
+.b-print button{
+    cursor: pointer;
+    border: 1px solid gray;
+    background-color: #eee;
+    border-radius: 3px;
+    position: relative;
+    width: 100px;
+    height: 22px;
+}
+.b-print button img{
+    position: absolute;
+    top:5px;
+    left:10px;
+}    
+
