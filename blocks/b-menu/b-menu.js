@@ -7,7 +7,7 @@
         })
         $('.b-menu').on({
             'mouseover': function(e){
-                $(this).css('background', 'url(img/bkg_menu.gif) no-repeat');
+                $(this).css('background', 'url(bkg_menu.gif) no-repeat');
             },
             'mouseout': function(e){
                 $(this).css('background', '');

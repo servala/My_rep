@@ -1,74 +1,392 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>nya</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.1.js"></script>
+    <script type="text/javascript" src="yatask.js"></script>
+</head>
+<body>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="My rep : my_project" />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>My rep</title>
-  </head>
-
-  <body>
-h   Hello world!!
-    <!-- HEADER -->
-    <!--div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/servala/My_rep">View on GitHub</a>
-
-          <h1 id="project_title">My rep</h1>
-          <h2 id="project_tagline">my_project</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/servala/My_rep/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/servala/My_rep/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
+<table class="main_tb">
+<tr>
+<td class="main_tb_l">
+    <div class="b-menu"></div>
+</td>
+<td class="main_tb_r">
+<div class="content">
+<div class="content">
+<div class="b-swim">
+    <!--div class="b-search">
+        <form method="get" action="http://yandex.ru/yandsearch" target="_blank">
+            <input type="text" name="text" />
+            <input class="e-button" type="image" src="img/lupa.gif" />
+        </form>
     </div-->
-
-    <!-- MAIN CONTENT -->
-    <!--div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
+    <div class="b-print">
+        <button><img src="images/print.gif" />печать</button>
     </div>
+</div>
+<div class="b-content">
+<div class="b-content-item">
+    <div class="e-content-item-bullet">
+        <i>Общие вопросы</i>
+    </div>
+    <div class="e-content-item-inner">
+        <b>Фамилия, имя, отчество:</b>
+        Северьянова Марина Александровна
+        <b>Е-mail:</b>
+        servala@list.ru
+        <b>Телефон:</b>
+        8(905)-592-31-90
+        <b>Год рождения:</b>
+        1985
+        <b>Город, в котором живёте:</b>
+        Москва
+        <b>Вуз, факультет, специальность, кафедра:</b>
+        МГУ, физический факультет, физик, математика
+        <b>Год окончания вуза:</b>
+        2010
+        <b>На каком уровне владеете английским языком?</b>
+        чтение технической литературы и просмотр сериалов
+        <b>Чего вы ожидаете от участия в Школе?</b>
+        Получение новых знаний, общение с хорошими специалистами.
+        <b>Откуда вы о нас узнали?</b>
+        Пришло письмо на почту с ссылкой на школу.
+        <b>Сколько времени вы были бы готовы уделять стажировке или работе в Яндексе?</b>
+        8 часов в день, 5 дней в неделю
+    </div>
+</div>
+<div class="b-content-item">
+    <div class="e-content-item-bullet">
+        <i>Опыт разработки</i>
+    </div>
+    <div class="e-content-item-inner" >
+        <b>
+            Расскажите нам о вашем опыте разработки. Ничего не упускайте: это может быть как серьезный интерфейс, так и просто домашняя страничка.
+        </b>
+        Разрабатывала сайты для ОАО&nbsp;"Вымпелком":
+        <br/>
+        - http://search.beeline.ru/search.wbp,<br/>
+        - http://dobro.beeline.ru/ekb/map.wbp,<br/>
+        - http://card.beeline.ru/index.wbp,<br/>
+        - http://blackberry.beeline.ru/index.wbp.
+        <br/><br/>
 
-    <!-- FOOTER  -->
-    <!--div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">My rep maintained by <a href="https://github.com/servala">servala</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div-->
+        Участвовала в разработке:
+        <br/>
+        - http://mobile.beeline.ru,<br/>
+        - http://internet.beeline.ru,<br/>
+        - http://tv.beeline.ru,<br/>
+        - http://smotri.beeline.ru,<br/>
+        - http://b2b.beeline.ru,<br/>
+        - http://press.beeline.ru,<br/>
+        - http://help.beeline.ru,<br/>
+        - http://blackberry.beeline.ru,<br/>
+        - http://dom.beeline.ru/msk/start/index.wbp,<br/>
+        - https://about.beeline.ru/vacancies/anketa_rezume.wbp.<br/>
+        <b>Какие языки программирования, фреймворки и технологии вы использовали? Сложились ли у вас личные предпочтения?</b>
+        - XSL / XPath
+        <br/>
+        - HTML/ DHTML
+        <br/>
+        - JavaScript, jQuery
+        <br/>
+        - Photoshop
+        <br/>
+        Из предпочтений - на jQuery порой быстрее и элегантнее писать код, чем на чистом JavaScript.
 
-    
+        <b>
+            Какие редакторы и среды разработки вы использовали? Чем обычно пользуетесь?
+        </b>
+        Среда разработки - WebStorm - оказалась самой удобной.
+        <b>
+            С какими ОС приходилось сталкиваться? Для каких целей вы их использовали?
+        </b>
+        - Windows - по-молодости;<br/>
+        - Ubuntu, openSUSE - ознакомительная;<br/>
+        - OS X - для жизни и работы.
+        <b>
+            Приходилось ли вам пользоваться системами контроля версий? Если да, то какими? Какая из них вам нравится больше всего?
+        </b>
+        Git.
+        <b>
+            Использовали ли вы системы постановки и ведения задач?
+        </b>
+        Нет.
+        <b>
+            Какие полезные для фронтенд-разработчика ресурсы вы используете и можете посоветовать?
+        </b>
+        - http://www.w3schools.com,<br/>
+        - http://javascript.ru,<br/>
+        - http://htmlbook.ru,<br/>
+        - http://www.jslint.com,<br/>
+        - http://jquery.com
+        <b>
+            Работали ли вы где-нибудь? Какие у вас были должностные обязанности? Есть ли опыт работы в команде?
+        </b>
+        Работала в ООО"Альт-Лан" и в "ЦИА".<br/>
+        Должностные обязанности - поддержка старых сайтов и разработка новых.<br/>
+        Есть опыт работы в комманде от восьми до тридцати человек.
+    </div>
+</div>
+<div class="b-content-item">
+    <div class="e-content-item-bullet">
+        <i>Ответы на вопросы 1-2 </i>
+    </div>
+    <div class="e-content-item-inner">
+        <b>Перечислите известные вам инструменты и приёмы для отладки кода в разных браузерах.</b>
 
-  </body>
+        Для отладки кода можно использовать как инструменты, которые предаствляют сами браузеры, так и плагины.
+        Из того, что мне удобно - это консоль Javascript-a в Google Chome, плагин FireBug для FireFox. В Opere хвалят Dragonfly,
+        Microsoft придумало Microsoft Script Editor, который использует среду Visual Studio для отладки, только код нужно потом чистить от различных дебагер-меток, а то сразу понятно, чем человек пользуется.
+        В Safari есть "Веб-инспектор".
+
+        <b>Опишите своими словами, что происходит в браузерах при клике на ссылку yandex.ru (полнота ответа – на ваше усмотрение).</b>
+        При нажатии на ссылку браузер запрашивает данные у сервера по средствам HTTP протокола, запрос является синхронным, т.е. браузер не может отправлять новый запрос, пока не получил ответ от предыдущего.
+        Сам запрос состоит из нескольких этапов. Сначала идет поиск ближайщего DNS-сервера, где происходит перобразование имени сайта, написанное символами (URI), в его IP-дресс. По уникальному сетевому адрессу идет установка соединения с соответсвующим сервером.
+        Далее браузер ожидает пока пакет данных дойдет до сервера, на сервере произойдет обработка запроса, и браузер получит ответ.
+    </div>
+</div>
+<div class="b-content-item">
+    <div class="e-content-item-bullet">
+        <i> Ответ на вопрос 3(JS) </i>
+    </div>
+    <div class="e-content-item-inner" >
+        <div class="b-task4">
+            <div style="overflow-y:scroll; height: 500px; width: 556px;" class="for_print">
+                                       <pre class="js">
+function exchange(){
+   var multiply;
+   switch( this.price.charAt( 0 ))
+   {
+       case '€':
+           multiply = 40.725;
+           break;
+       case '¥':
+           multiply = 0.415;
+           break;
+       default:
+           multiply = 1;
+   }
+   return '₷' +
+          parseInt( this.price.substring( 1 ) *
+              multiply *  100 ) / 100;
+}
+
+function Car( manufacturer, model, year ) {
+   this.manufacturer = manufacturer;
+   this.model = model;
+   this.year = !!year ? year : (new Date()).getFullYear();
+   this.price = null;
+}
+
+Car.prototype.toString = function() {
+   return this.getInfo();
+}
+Car.prototype.getInfo = function() {
+  return [
+      this.manufacturer,
+      this.model,
+      this.year
+  ].join( ' ' );
+}
+Car.prototype.getDetailedInfo = function() {
+   return 'Производитель: ' +
+          this.manufacturer +
+          '. Модель: ' +
+          this.model +
+          '. Год: ' +
+          this.year;
+}
+Car.prototype.setPrice = function( price ) {
+   this.price = price;
+}
+
+var bmw = new Car("BMW", "X5", 2010),
+       audi = new Car("Audi", "Q5", 2012),
+       toyota = new Car("Toyota", "Camry");
+
+function CarDealer(name) {
+   this.name = name;
+   this.cars = [];
+}
+
+// @TODO: реализовать метод добавления машин в автосалон.
+// Предусмотреть возможность добавления одной машины,
+// нескольких машин.
+CarDealer.prototype.add = function() {
+   for (var i = 0, l = arguments.length; i < l; i++ ) {
+       this.cars.push( arguments[ i ] );
+   }
+   return this;
+}
+
+// @TODO: реализовать метод установки цены на машину
+CarDealer.prototype.setPrice = function( carId, cost ){
+   for ( var i = 0, l = this.cars.length; i < l; i++ ) {
+       with (this.cars[ i ])
+           if ([manufacturer, model, year].join(' ') === carId){
+               setPrice(cost);
+               break;
+           }
+   }
+   return this;
+}
+
+CarDealer.prototype.list = function(){
+   var s = '';
+   for ( var i = 0, l = this.cars.length; i < l; i++ ) {
+       s += (s ? ', ' : '') + this.cars[ i ].getInfo();
+   }
+   return s;
+}
+
+// @TODO: реализовать вывод списка автомобилей в продаже,
+// с фильтрацией по стране производителю,
+// используя метод getCountry:
+CarDealer.prototype.listByCountry = function( country ){
+   var s = '';
+   for ( var i = 0, l = this.cars.length; i < l; i++ ) {
+       if(country === getCountry.call(this.cars[ i ])) {
+           s += (s ? ', ' : '') + this.cars[ i ].getInfo();
+       }
+   }
+   return s;
+}
+
+// @TODO: бонус! выводить список машин с ценой в рублях.
+CarDealer.prototype.pricelist = function(){
+   var s = '';
+   for ( var i = 0, l = this.cars.length; i < l; i++ ) {
+       s += (s ? ', ' : '') +
+            this.cars[ i ].getInfo() +
+            ' - ' +
+            exchange.call( this.cars[ i ]);
+   }
+   return s;
+}
+
+var yandex = new CarDealer('Яндекс.Авто');
+
+yandex
+       .add(toyota)
+       .add(bmw, audi);
+
+yandex
+       .setPrice('BMW X5 2010', '€2000')
+       .setPrice('Audi Q5 2012', '€3000')
+       .setPrice('Toyota Camry 2012', '¥3000');
+
+function getCountry() {
+   switch (this.manufacturer.toLowerCase()) {
+       case 'bmw':
+       case 'audi':
+           return 'Germany';
+
+       case 'toyota':
+           return 'Japan';
+   }
+}
+
+                                   </pre>
+            </div>
+                                   <span class="for_print">
+                                        <button>'Car: ' + bmw</button>
+                                        <button>bmw.getInfo()</button>
+                                        <button>bmw.getDetailedInfo()</button>
+                                        <button>yandex.list()</button>
+                                        <button>yandex.listByCountry('Germany')</button>
+                                        <button>yandex.pricelist()</button>
+                                   </span>
+        </div>
+    </div>
+</div>
+<div class="b-content-item">
+    <div class="e-content-item-bullet">
+        <i> Ответ на вопрос 4 </i>
+    </div>
+    <div class="e-content-item-inner">
+        <div style="overflow-x:scroll; " class="for_print">
+                                            <pre>
+$ find / -name '*яндекс*.txt' -exec grep -l 'школа фронтенд-разработки' {} \;
+                                            </pre>
+        </div>
+    </div>
+</div>
+<div class="b-content-item">
+    <div class="e-content-item-bullet">
+        <i>Ответ на вопрос 5 (Python)</i>
+    </div>
+    <div class="e-content-item-inner">
+        <div style="overflow-y:scroll; width: 556px; height: 500px;" class="for_print">
+                                       <pre>
+import argparse
+
+parser = argparse.ArgumentParser(
+  description='Print the number of arguments.')
+parser.add_argument(
+  'arguments',
+  metavar='ARG',
+  type=str,
+  nargs='*',
+  help='some arguments')
+parser.add_argument(
+  '-m',
+  dest='message',
+  default='',
+  help='custom message')
+<b>parser.add_argument(
+    '-v',
+    dest='verbose',
+    action='store_true',
+    help='verbose mode')</b>
+# TODO: add '-v' option for verbose mode
+
+args = parser.parse_args()
+
+count = 0
+
+for a in args.arguments:
+    # TODO: add '-v' option for verbose mode
+    # and print each argument
+    count += 1
+
+if args.message != '':
+    print(args.message)
+<b>if args.verbose:
+    print(args.arguments)</b>
+print(count)
+
+                                            </pre>
+        </div>
+    </div>
+</div>
+<div class="b-content-item">
+    <div class="e-content-item-bullet">
+        <i>Ответ на вопрос 6</i>
+    </div>
+    <div class="e-content-item-inner">
+        <b>Расскажите, в каком объёме и при каких обстоятельствах вы изучали следующие темы: языки программирования (императивные/декларативные, разные системы типов),
+            структуры (классы, структуры данных, примитивные типы), парадигмы (события, ООП, параллельность/асинхронность, кеширование),
+            алгоритмы (парсинг, сортировка, поиск), паттерны.</b>
+
+        Изучала JavaScript, который относится к императивным нетипизированным языкам.<br/>
+        Изучала XSL/xPath, который лучше всего отнести к функциональным языкам.<br/>
+        В JavaScripte все данные являются объектами, некоторые объекты, такие как строка, число, логический тип -  можно отнести к примитивным типам.
+        Классы в JavaScript можно иммитировать,вместо структур используются массивы и объекты.<br/>
+        Читала "pro JavaScript technique" Резика пользуюсь некоторыми приемами - замыкание, цепь, json-нотации,
+        ненавязчивый JavaScript. Прорешала  на Javascript-e многие упражнения к алгоритмам из 3-его тома Дональда Кнута.
+        </b>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</td>
+</tr>
+</table>
+<script type="text/javascript" src="index.js"></script>
+</body>
 </html>
