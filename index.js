@@ -8,7 +8,7 @@
         })
         $('.b-menu').on({
             'mouseover': function(e){
-                $(this).css('background', 'url(images/bkg_menu.gif) no-repeat');
+                $(this).css('background', 'url(blocks/b-menu/bkg_menu.gif) no-repeat');
             },
             'mouseout': function(e){
                 $(this).css('background', '');
@@ -19,7 +19,7 @@
 
             }
         });
-        
+
         $ul = $('<ul></ul>').appendTo('.b-menu');
 
         var ufoClicked = false;
@@ -35,7 +35,7 @@
                 else {
                   $($(this).data( 'el')).click();
                 }
-                  
+
             },
             'click': function(){
               ufoClicked = !ufoClicked;

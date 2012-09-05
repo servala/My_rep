@@ -1,4 +1,5 @@
 exports.blocks = [
+    { name:'b-main'},
 	{ name:'b-menu'},
 	{ name:'b-content',
 		elems:[{name:'item'}]},
