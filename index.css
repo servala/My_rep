@@ -1,6 +1,311 @@
+html{
+    overflow-y: scroll;
+    height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Tahoma, Verdana, sans-serif;
+    font-size: 11px;
+    height: 100%;
+    color: black;
+    background: url("1.jpg") no-repeat;
+}
+table{
+    border: 0;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    height: auto;
+    height: 100%;
+}
+table td {
+    padding: 0px;
+    font-family: Verdana, sans-serif;
+    font-size: 11px;
+}
+.clear{ clear:both;}
+.drawContent{ cursor:pointer;}
+.link{ border-bottom:1px dotted black; cursor: pointer;}
+.link:hover { border-bottom:1px dotted #888 !important;}
 
-@import url(blocks/b-main/b-main.css);
-@import url(blocks/b-menu/b-menu.css);
-@import url(blocks/b-content/b-content.css);
-@import url(blocks/b-swim/b-swim.css);
-@import url(blocks/b-print/b-print.css);
+.b-page_main_tb { width: 800px; margin: 0 auto; height: 570px;}
+.b-page_main_tb_l { position: relative; width: 520px; vertical-align: top; text-align: left;padding: 15px 0 0 30px;}
+.b-page_main_tb_r { width: 235px; vertical-align: top; text-align: left; background-color: #d6f3f8; padding: 15px 0 0 15px; }
+
+.b-page_main_tb_l table{ height: 10px;}
+.b-page_main_tb_l label { width: 100px; display: inline-block; }
+.b-page_main_tb_l div.formLine { margin: 10px 0;}
+
+
+.w320{ width: 320px;}
+<!-- -->
+.b-day-title{ color: #515151; font-size: 12px}
+.b-day-title span{ font-size: 18px; color: black; padding-right: 5px;}
+
+.e-day-list{padding: 0 5px 0 40px; color: #949494;}
+.e-day-list p { margin: 5px 0 0 0;font-size: 14px; cursor: pointer;}
+.e-day-list span{ margin-left: 5px; color: black;}
+
+.e-lector-list{ color: red; }
+.e-lector-list p { margin: 5px 0 0 0;font-size: 14px;color: red;}
+.e-lector-list span.link{ border-bottom:1px dotted red}
+
+
+<!-- -->
+.b-lecture{
+    margin-top: 50px; font-size: 14px;
+}
+.b-lecture-title{
+    font-size: 20px;
+}
+.b-lecture-autor{ color: red; margin-top: 3px;}
+.b-lecture-content{ padding: 25px 10px 0 40px;}
+.b-lecture-link{ padding: 20px 40px 0 0px; font-size: 10px; float: left;}
+
+.b-page{
+    background: url("owl.gif")  5px 5px no-repeat;
+
+    width: 1012px;
+    margin: 0 auto;}
+
+.b-sdar {
+    margin: 10px 0 0 8px;
+    clear: both;
+    width: 216px;
+}
+.b-calendar {
+    margin: 10px 0 0 8px;
+    clear: both;
+    width: 216px;
+}
+.b-calendar div{
+    float: left;
+    position: relative;
+    width: 27px;
+    height: 18px;
+    background-color: white;
+    line-height: 18px;
+    text-align: right;
+    padding: 0 3px 0 0;
+    border: 0;
+    border-right: 1px solid #ecebeb;
+    border-bottom: 1px solid #ecebeb;
+}
+.b-calendar div.month {
+    position: relative;
+    width: 217px;
+    border: 0;
+    border-radius: 0 5px 0 0;
+    height: 40px;
+    padding: 0;
+    background: -webkit-linear-gradient(top, #fff, #ecebeb);
+    background: -moz-linear-gradient(top,  #fff,  #ecebeb);
+    background: -ms-linear-gradient(top,  #fff,  #ecebeb);
+    background: -o-linear-gradient(top,  #fff,  #ecebeb);
+}
+.b-calendar div.month span {
+    position: absolute;
+    left: 0;
+    line-height: 25px;
+    font-size: 18px;
+}
+.b-calendar div.month span.letter {
+    left: -15px;
+    width: 14px;
+    color: red;
+}
+.b-calendar div.month a {
+    position: absolute;
+    width: 20px;
+    color: #848383;
+    cursor: pointer;
+}
+.b-calendar div.month a:hover {
+    color: red;
+}
+.b-calendar div.month a#mon_p {
+    right: 7px;
+    top: 5px;
+}
+.b-calendar div.month a#mon_n {
+    right: 20px;
+    top: 5px;
+}
+.b-calendar div.sunday {
+    border-right: 0 !important;
+}
+.b-calendar div.angle {
+    border-radius: 0 0 0 5px;
+}
+.b-calendar div.last {
+    border-radius: 0 0 5px;
+}
+.b-calendar div.empty {
+    background-color: #faf9f9;
+}
+.b-calendar div.current {
+    background: #848383;
+    color: white;
+}
+.b-calendar div.week-day {
+    background: transparent;
+    width: 28px;
+    border: 0;
+    margin: 23px 0 0;
+}
+.b-calendar div.week-day.sunday {
+    width: 27px;
+}
+.b-calendar div.week-day.red {
+    color: red;
+}
+.b-calendar div.mark {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.b-calendar div.blue {
+    border-left: 6px solid blue;
+    border-bottom: 6px solid transparent;
+    background-color: transparent;
+}
+.b-calendar div.orange {
+    border-left: 6px solid orange;
+    border-bottom: 6px solid transparent;
+    background-color: transparent;
+}
+.b-calendar div.yellow {
+    border-left: 6px solid yellow;
+    border-bottom: 6px solid transparent;
+    background-color: transparent;
+}
+<!-- -->
+.b-list-lecture{
+    color: #2c8ab6;
+    font-size: 14px;
+    margin: 10px 0 20px 0;
+}
+.b-list-lecture-title {
+    margin: 15px 0 0 0px;
+    width: 205px;
+    border-bottom: 1px solid #2c8ab6;
+}
+.b-list-lecture-list{
+    font-size: 11px;
+}
+.b-list-lecture-list p{
+    margin: 5px 0 0 20px;
+    width: 185px;
+    position: relative;
+    height: 15px;
+}
+.b-list-lecture-list p.red span.time {
+    color: red;
+}
+.b-list-lecture-list p.cancel span , p.cancel , .b-lecture .cancel{
+    text-decoration: line-through;
+}
+.b-list-lecture-list p span.content {
+    color: black;
+    width: 140px;
+    height: 18px;
+    position: absolute;
+    padding-left: 50px;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+.b-list-lecture-list p span.content:hover {
+    width: auto;
+    overflow: auto;
+    background-color: #D6F3F8;
+    border-radius: 3px;
+    padding-right: 5px;
+}
+.b-list-lecture-list p span span {
+    white-space: pre;
+    height: 13px;
+}
+.b-list-lecture-list p span.time {
+    width: 45px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}.b-search {
+     position: relative;
+     background: white;
+     border-radius: 3px;
+     width: 225px;
+     padding: 0 3px 0 0;
+ }
+.b-search input.e-text {
+    border:0;
+    outline: none;
+    width: 200px;
+    padding-left: 0px;
+    margin: 0 0 0 5px;
+}
+.b-search span {
+    position: absolute;
+    top: 0;
+    right: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    color: silver;
+}
+.b-search-content-title{
+    margin: 10px 0;
+    font-size:18px;
+    color: #48bf31;
+
+}
+.b-search-list-final{
+    margin: 5px 0;
+    font-size: 13px;
+}
+.e-button{ height: 10px; width: 10px; cursor: pointer;}
+
+.b-print{
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    background-image: url('print.gif');
+    float: right;
+    margin-right: 15px;
+}
+div.b-print div{ display: none; }
+
+.b-redactor-del {
+    background: -webkit-linear-gradient(top, #bc2697, #000);
+    background: -moz-linear-gradient(top,  #bc2697,  #000);
+    background: -ms-linear-gradient(top,  #bc2697,  #000);
+    background: -o-linear-gradient(top,  #bc2697,  #000);
+    padding: 5px;
+    color: white;
+    border-radius: 3px;
+    margin-right: 20px;
+}
+.b-redactor-save {
+    background: -webkit-linear-gradient(top, #fad62d, #fff);
+    background: -moz-linear-gradient(top,  #fad62d,  #fff);
+    background: -ms-linear-gradient(top,  #fad62d,  #fff);
+    background: -o-linear-gradient(top,  #fad62d,  #fff);
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+.b-redactor-cancel{
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    background-image: url('cancel.gif');
+    float: right;
+    margin-right: 15px;
+    display: none;
+}
