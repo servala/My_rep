@@ -9,7 +9,6 @@ body {
     font-size: 11px;
     height: 100%;
     color: black;
-    background: url("1.jpg") no-repeat;
 }
 table{
     border: 0;
@@ -35,10 +34,8 @@ table td {
 .b-page_main_tb_l table{ height: 10px;}
 .b-page_main_tb_l label { width: 100px; display: inline-block; }
 .b-page_main_tb_l div.formLine { margin: 10px 0;}
-
-
 .w320{ width: 320px;}
-<!-- -->
+
 .b-day-title{ color: #515151; font-size: 12px}
 .b-day-title span{ font-size: 18px; color: black; padding-right: 5px;}
 
@@ -50,21 +47,14 @@ table td {
 .e-lector-list p { margin: 5px 0 0 0;font-size: 14px;color: red;}
 .e-lector-list span.link{ border-bottom:1px dotted red}
 
-
-<!-- -->
-.b-lecture{
-    margin-top: 50px; font-size: 14px;
-}
-.b-lecture-title{
-    font-size: 20px;
-}
+.b-lecture{ margin-top: 50px; font-size: 14px;}
+.b-lecture-title{ font-size: 20px;}
 .b-lecture-autor{ color: red; margin-top: 3px;}
 .b-lecture-content{ padding: 25px 10px 0 40px;}
 .b-lecture-link{ padding: 20px 40px 0 0px; font-size: 10px; float: left;}
 
 .b-page{
     background: url("owl.gif")  5px 5px no-repeat;
-
     width: 1012px;
     margin: 0 auto;}
 
@@ -220,7 +210,6 @@ table td {
     left: 0;
     overflow: hidden;
     text-overflow: ellipsis;
-
 }
 .b-list-lecture-list p span.content:hover {
     width: auto;
